@@ -1,0 +1,15 @@
+name: BuildMode
+version: '${project.version}'
+main: com.buildmode.BuildMode
+api-version: '1.21'
+authors: [Axther]
+description: A plugin that allows players to temporarily enter Creative mode for building purposes
+commands:
+  buildmode:
+    description: Main command for BuildMode plugin
+    aliases: [bm]
+    usage: /<command> [start|end|reload]
+permissions:
+  buildmode.admin:
+    description: Allows bypassing time limits and viewing active sessions
+    default: op
